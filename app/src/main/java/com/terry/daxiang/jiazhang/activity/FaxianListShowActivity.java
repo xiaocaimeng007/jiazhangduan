@@ -9,6 +9,9 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.MediaController;
@@ -56,8 +59,8 @@ public class FaxianListShowActivity extends BaseTestActivity{
     VideoView videoView;
     @BindView(R.id.txt_title)
     TextView txt_title;
-    @BindView(R.id.txt_content)
-    TextView txt_content;
+    @BindView(R.id.webview_content)
+    WebView webview_content;
     @BindView(R.id.bt_tianjia)
     TextView bt_tianjia;
 
@@ -83,7 +86,20 @@ public class FaxianListShowActivity extends BaseTestActivity{
         showView(iv_gengduo);
         setTextview(tvTitle, "");
         txt_title.setText(title);
-        txt_content.setText(_context);
+//        txt_content.setText(_context);
+        webview_content.loadUrl(Urls.URL_AVATAR_HOST+"/cons/find.aspx?uid=&token=&cid="+_aid);
+        WebSettings settings = webview_content.getSettings();
+        settings.setJavaScriptEnabled(true);
+        settings.setSupportZoom(false);
+
+        webview_content.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
+
         initViewMorePopup();
 
         loadNetData();
@@ -151,7 +167,6 @@ public class FaxianListShowActivity extends BaseTestActivity{
 
             shoucan = contentBean.getIs_shoucang();
             txt_title.setText(contentBean.getTitle());
-            txt_content.setText(contentBean.getZhaiyao());
             initShoucan();
         }catch (Exception e){
             e.printStackTrace();

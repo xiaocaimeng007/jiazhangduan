@@ -38,13 +38,11 @@
                     android:layout_marginLeft="@dimen/dp_10"
                     android:textColor="@color/black"/>
 
-                <TextView
-                    android:id="@+id/txt_content"
+                <WebView
+                    android:id="@+id/webview_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
-                    android:text="奇智奇材-社会(小班)"
-                    android:textSize="12sp"
                     android:textColor="@color/color_7c7c7c"/>
             </LinearLayout>
         </ScrollView>
