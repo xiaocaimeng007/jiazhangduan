@@ -1,0 +1,23 @@
+<resources>
+    <string name="string_network_error">网络请求失败！</string>
+    <string name="string_load_error">加载请求失败！</string>
+
+    <string name="app_name">萌玛稚童</string>
+    <string name="yindao1_0">每周新食谱 营养新计划</string>
+    <string name="yindao1_1">定期宝宝体检,确保营养成长</string>
+    <string name="yindao2_0">远程可视监控</string>
+    <string name="yindao2_1">随时随地,观看宝宝活动场景</string>
+    <string name="yindao3_0">精彩瞬间 分享愉悦</string>
+    <string name="yindao3_1">与全班小朋友,定时发布分享</string>
+
+    <!--login-->
+    <string name="string_login_phone_error">手机号不能为空！</string>
+    <string name="string_login_psd_error">密码不能为空!</string>
+
+    <string name="string_home_bangjiquan_togou">通知通告</string>
+    <string name="string_home_bangjiquan_jingcai">精彩瞬间</string>
+    <string name="string_home_bangjiquan_shipu">每日食谱</string>
+    <string name="string_home_bangjiquan_jihua">课程计划</string>
+    <string name="string_home_bangjiquan_anquan">园所安全</string>
+    <string name="string_home_bangjiquan_tousu">互动投诉</string>
+</resources>

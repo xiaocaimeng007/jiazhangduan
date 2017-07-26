@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_yindao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="立即体验"
+        android:textSize="15sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:background="@drawable/shape_juxing_heibian6dp"
+        android:visibility="gone"/>
+
+    <com.terry.daxiang.jiazhang.view.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        CircleIndicator:ci_background="#aaa"
+        CircleIndicator:ci_gravity="center"
+        CircleIndicator:ci_margin="15dp"
+        CircleIndicator:ci_mode="outside"
+        CircleIndicator:ci_radius="5dp"
+        CircleIndicator:ci_selected_background="#555"/>
+</RelativeLayout>

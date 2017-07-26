@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lan" >
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/window_cancel"/>
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/btn_cancel"
+        android:layout_toRightOf="@id/btn_cancel"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:drawableRight="@mipmap/window_sure"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/btn_cancel"
+        android:layout_toLeftOf="@id/btn_sure"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/btn_title"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:gravity="center"/>
+
+</RelativeLayout>

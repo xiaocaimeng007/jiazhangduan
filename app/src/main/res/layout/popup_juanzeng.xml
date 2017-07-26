@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_juxing_bg_bai_15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="支持原创,当赏"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_qian"/>
+
+            <EditText
+                android:id="@+id/et_jine"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:hint="最多不超过10元"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColorHint="#999"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#eee"/>
+
+        <TextView
+            android:id="@+id/bt_shang"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_juxing_bg_lan_15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="赏"
+            android:textColor="#fff"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

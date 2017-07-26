@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/tv_fabu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0fff"
+            android:gravity="top"
+            android:hint="这一刻的想法..."
+            android:maxHeight="300dp"
+            android:minHeight="80dp"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/icon_1"/>
+
+            <ImageView
+                android:id="@+id/iv_tianjia"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_juxing_heibian0dp"
+                android:padding="20dp"
+                android:src="@mipmap/icon_tianjia"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#ddd"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="此信息发送一键直达园长信箱,请放心使用"
+            android:textColor="#333"
+            android:textSize="11sp"/>
+    </LinearLayout>
+</LinearLayout>

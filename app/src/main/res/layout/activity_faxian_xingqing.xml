@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bt_tianjia"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:lines="1"
+                    android:text="奇智奇材-社会(小班)"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="奇智奇材-社会(小班)"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_7c7c7c"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/bt_tianjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/v_view"
+            android:background="@drawable/shape_juxing_bg_lan_3dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_margin="6dp"
+            android:text="添加收藏"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/v_view"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

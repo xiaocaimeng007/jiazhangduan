@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奇智奇材-社会(小班)"
+            android:textColor="#555"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:text="培养小朋友对社会的初步感知和交往能力.\n\n父母与老师关心照顾孩子是应该做的事情,但不适当的关心和照顾往往会阻碍孩子独立性格的形成,因此适度尊重孩子的意见,信赖孩子的交往能力,并让孩子在尝试中成长,是我们亟待解决的问题."
+            android:layout_marginTop="5dp"
+            android:textColor="#666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/bt_tianjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_juxing_bg_lan_3dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="添加收藏"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</LinearLayout>

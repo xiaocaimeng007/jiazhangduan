@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+        android:id="@+id/pb_progressbar"
+        android:layout_width="50dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="45dp"
+        android:maxHeight="49dp"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:max="100"
+        android:progressDrawable="@drawable/shape_progressbar_xingwei2"
+        android:thumb="@mipmap/xingweijilu1"/>
+
+</LinearLayout>

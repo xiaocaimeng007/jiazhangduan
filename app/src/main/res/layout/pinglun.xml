@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_pinglun"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="#eee"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:visibility="gone">
+
+    <EditText
+        android:id="@+id/et_pinglun"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="6"
+        android:background="@drawable/shape_juxing_lanbian3dp"/>
+
+    <TextView
+        android:id="@+id/bt_fasong"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_juxing_bg_lan_3dp"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="#fff"/>
+</LinearLayout>

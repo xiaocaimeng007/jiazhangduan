@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+                android:id="@+id/pb_progressbar_techang"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:minHeight="45dp"
+                android:maxHeight="49dp"
+                android:max="100"
+                android:progressDrawable="@drawable/shape_progressbar_xingwei2"
+                android:thumb="@mipmap/xingweijilu1"
+                android:thumbOffset="0dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+                android:id="@+id/pb_progressbar_siwei"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:minHeight="45dp"
+                android:maxHeight="49dp"
+                android:max="100"
+                android:progressDrawable="@drawable/shape_progressbar_xingwei1"
+                android:thumb="@mipmap/xingweijilu2"
+                android:thumbOffset="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+                android:id="@+id/pb_progressbar_xingge"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:minHeight="45dp"
+                android:maxHeight="49dp"
+                android:max="100"
+                android:progressDrawable="@drawable/shape_progressbar_xingwei3"
+                android:thumb="@mipmap/xingweijilu3"
+                android:thumbOffset="0dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+                android:id="@+id/pb_progressbar_xiguang"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:minHeight="45dp"
+                android:maxHeight="49dp"
+                android:max="100"
+                android:progressDrawable="@drawable/shape_progressbar_xingwei4"
+                android:thumb="@mipmap/xingweijilu4"
+                android:thumbOffset="0dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.terry.daxiang.jiazhang.view.VerticalSeekBar
+                android:id="@+id/pb_progressbar_nengli"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:minHeight="45dp"
+                android:maxHeight="49dp"
+                android:max="100"
+                android:progressDrawable="@drawable/shape_progressbar_xingwei5"
+                android:thumb="@mipmap/xingweijilu5"
+                android:thumbOffset="0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/xingwei0"
+        android:layout_marginTop="-22dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_nengli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_juxing_bg_qianlan_3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特长"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/tv_gaishan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 项"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_xiguan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_juxing_bg_lan_3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="思维 "
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/tv_jiankang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 项"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_xingge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_juxing_bg_chengse_3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性格 "
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/tv_xingge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 项"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jiankang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_juxing_bg_shenhong_3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="习惯 "
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/tv_xiguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 项"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gaishan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_juxing_bg_huang_3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="能力 "
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/tv_nengli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 项"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="7dp"
+        android:background="#ddd"/>
+    <include layout="@layout/item_xingwei_tian" />
+</LinearLayout>

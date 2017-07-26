@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:background="@mipmap/bg_zhuce">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="宝宝姓名"
+                        android:textColor="#555"/>
+
+                    <EditText
+                        android:id="@+id/et_bbname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_heibian2dp"
+                        android:hint="请输入孩子姓名"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#999"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="宝宝生日"
+                        android:textColor="#555"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_brith"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8"
+                        android:background="@drawable/shape_juxing_heibian3dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_birthdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/iv_brith"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:hint="请选择宝宝生日"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="#999"
+                            android:background="#0fff"
+                            android:textSize="11sp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_brith"
+                            android:layout_width="13dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:background="@mipmap/icon_bai_sanjiao"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_sex"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_juxing_heibian3dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/iv_sex"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:hint="性别"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="#999"
+                            android:background="#0fff"
+                            android:textSize="11sp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_sex"
+                            android:layout_width="13dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:background="@mipmap/icon_bai_sanjiao"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="家长姓名"
+                        android:textColor="#555"/>
+
+                    <EditText
+                        android:id="@+id/et_jianame"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_heibian2dp"
+                        android:hint="请输入你的全名"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#999"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="关  系"
+                        android:textColor="#555"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_guanxi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_heibian3dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_guanxi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/iv_guanxi"
+                            android:hint="请选择与宝宝的关系"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="#999"
+                            android:background="#0fff"
+                            android:textSize="11sp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_guanxi"
+                            android:layout_width="13dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:background="@mipmap/icon_bai_sanjiao"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="手机号"
+                        android:textColor="#555"/>
+
+                    <EditText
+                        android:id="@+id/et_phoneNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_heibian2dp"
+                        android:hint="请输入正确的的手机号"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#999"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.7">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+                                <EditText
+                                    android:id="@+id/et_yanzhengma"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/shape_juxing_heibian2dp"
+                                    android:gravity="center"
+                                    android:maxLength="10"
+                                    android:textSize="16sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/bt_get_yanzheng"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_juxing_heibian2dp"
+                                android:text="获取验证码"
+                                android:gravity="center"
+                                android:textColor="#666"
+                                android:textSize="10sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="登录密码"
+                        android:textColor="#555"/>
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_heibian2dp"
+                        android:hint="请输入正确6-12位数字,字母密码"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#999"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.7">
+                            <CheckBox
+                                android:id="@+id/cb_tongyi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已阅读并同意软件协议"
+                                android:textColor="#666"
+                                android:textSize="11sp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"/>
+
+                    <Button
+                        android:id="@+id/bt_register"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:background="@drawable/shape_juxing_bg_lan_3dp"
+                        android:gravity="center"
+                        android:text="注册"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我已是大象会员,点击 "
+                                android:textSize="11sp"
+                                android:textColor="#666"/>
+                            <TextView
+                                android:id="@+id/bt_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="登录"
+                                android:textSize="11sp"
+                                android:textColor="#00BB9C"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
